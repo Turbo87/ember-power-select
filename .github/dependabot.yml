@@ -1,0 +1,34 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "04:00"
+  open-pull-requests-limit: 10
+  labels:
+  - dependencies
+  ignore:
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
+  - dependency-name: ember-cli
+    versions:
+    - 3.24.0
+    - 3.25.0
+  - dependency-name: ember-template-lint
+    versions:
+    - 2.17.0
+    - 2.18.1
+  - dependency-name: ember-cli-mirage
+    versions:
+    - 2.0.1
+  - dependency-name: simple-git
+    versions:
+    - 2.31.0
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: ember-concurrency-decorators
+    versions:
+    - 2.0.1
